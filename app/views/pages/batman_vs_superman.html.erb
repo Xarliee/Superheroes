@@ -3,7 +3,25 @@
 <div>
 <%= link_to image_tag 'batman.jpg' , width: "50%"  %>
 </div>	
+<%= form_tag pages_save_heroe_path, method:"post" do %>
+<div class="form-group">
+		<%= label_tag :email, "Email" %>
+		<%= text_field_tag :title, nil, class: "form-control" %>
+		</div>
+<div class="form-group">
+		  
+		  <input class="btn btn-success" type="submit" value="Votar">
+		 </div>
 
 <div>
-<%= link_to image_tag 'superman.jpg' , width: "50%"  %>
-</div>
+<%= link_to image_tag 'superman.jpg' , width: "50%" %> 
+ 		  <div class="form-group">
+		<%= label_tag :email, "Email" %>
+		<%= text_field_tag :title, nil, class: "form-control" %>
+		</div>
+<div class="form-group">
+		  
+		  <input class="btn btn-success" type="submit" value="Votar">
+		 </div>
+<%end %>
+		 </div>

@@ -6,9 +6,8 @@ class PagesController < ApplicationController
   def batman_vs_superman
   end
   def save_heroe
-        if params[:heroe].present? && params[:email].present? 
-    Votos.create(
-              heroe: params[:heroe],
+        if  params[:email].present? 
+    Votos.create(              
               email: params[:email]    
     )
   end
